@@ -1,0 +1,19 @@
+@use 'sass:color';
+
+:host {
+  --vivid-pink: oklch(69.02% 0.277 332.77); /* #f637e3 */
+  --hot-pink: oklch(59.91% 0.239 8.14); /* #e90364 */
+  --hot-red: oklch(61.42% 0.238 15.34); /* #f11653 */
+
+  .vivid-pink {
+    background-color: var(--vivid-pink);
+  }
+
+  .hot-pink {
+    background-color: var(--hot-pink);
+  }
+
+  .hot-red {
+    background-color: var(--hot-red);
+  }
+}
