@@ -1,0 +1,58 @@
+:host {
+  @apply block relative;
+}
+
+section {
+  @apply flex flex-col items-start justify-center m-4 p-8;
+  @apply bg-white transition-shadow duration-500 shadow-2xl shadow-gray-200 hover:shadow-gray-300;
+  @apply md:m-8 md:p-16;
+}
+
+h2 {
+  @apply text-2xl mt-8;
+  @apply md:text-4xl md:!leading-tight;
+}
+
+h3 {
+  @apply font-light text-primary-200 mb-8;
+  @apply md:text-xl;
+}
+
+h4 {
+  @apply font-extrabold text-gray-300 uppercase mb-2;
+  @apply md:text-sm;
+}
+
+p {
+  @apply mb-10 text-sm !leading-7;
+  @apply md:text-base;
+}
+
+ul.vertical-list {
+  @apply list-disc list-outside px-4 mb-8;
+}
+
+ul.vertical-list li {
+  @apply leading-6 mb-4;
+}
+
+ul.horizontal-list {
+  @apply flex flex-wrap gap-2 leading-7;
+}
+
+ul.horizontal-list li {
+  @apply p-2;
+  @apply bg-gray-100 rounded-sm text-xs text-primary-200;
+  @apply md:px-4 md:py-2 md:text-base;
+}
+
+a {
+  @apply text-blue-500 hover:underline font-semibold;
+}
+
+/* .fancy-text-grad {
+  background: var(--lin-grad);
+  background-clip: text;
+  background-size: 400px;
+  -webkit-text-fill-color: transparent;
+} */

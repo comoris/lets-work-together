@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add global styles to this file, and also import other style files */
+
+@layer base {
+  :root {
+    --color-primary-base: #5c4c81;
+    --grad-col-01: rgb(255, 82, 82);
+    --grad-col-02: rgb(76, 0, 255);
+    --rad-grad: radial-gradient(100% 100% at 50% -20%, var(--grad-col-01) 0%, var(--grad-col-02) 100%);
+    --lin-grad: linear-gradient(45deg, var(--grad-col-01), var(--grad-col-02));
+  }
+
+  html,
+  body {
+    @apply h-full bg-gray-50;
+  }
+  html {
+    /* played with: Inter Tight, Palaquin, Poppins */
+    -webkit-font-smoothing: antialiased;
+    @apply font-sans text-base font-normal leading-relaxed text-primary-500 text-balance;
+
+    /* scroll-timeline: --page-scroll block; */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* played with: Inter Tight, Palaquin, Poppins */
+    @apply font-sans font-black text-balance text-primary-500;
+  }
+
+  p {
+    @apply font-sans text-primary-400 font-normal;
+    letter-spacing: -0.015em;
+  }
+
+  p b {
+    @apply text-primary-600 font-semibold;
+  }
+}
